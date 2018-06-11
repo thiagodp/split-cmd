@@ -1,0 +1,38 @@
+{
+  "name": "split-cmd",
+  "version": "1.0.0",
+  "description": "💦Split a command into an array or an object",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jest": "^23.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagodp/split-cmd.git"
+  },
+  "keywords": [
+    "split",
+    "command",
+    "argument",
+    "args",
+    "cli",
+    "spawn",
+    "exec",
+    "process",
+    "child_process"
+  ],
+  "author": {
+    "name": "Thiago Delgado Pinto",
+    "email": "thiago-dp@bol.com.br"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thiagodp/split-cmd/issues"
+  },
+  "homepage": "https://github.com/thiagodp/split-cmd#readme"
+}
