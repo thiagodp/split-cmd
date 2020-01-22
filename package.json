@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "💦Split a command into an array or an object",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "jest": "^23.1.0"
+    "jest": "^25.1.0"
   },
   "scripts": {
     "test": "jest"
