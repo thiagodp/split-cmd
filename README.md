@@ -4,6 +4,9 @@
 
 Useful for splitting a command to use with NodeJS' [child process](https://nodejs.org/api/child_process.html) methods, like [spawn](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options), [exec](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback), and [execFile](https://nodejs.org/api/child_process.html#child_process_child_process_execfile_file_args_options_callback), as well with libs like [execa](https://github.com/sindresorhus/execa). No external dependencies.
 
+[![Build Status](https://travis-ci.org/thiagodp/split-cmd.svg?branch=master)](https://travis-ci.org/thiagodp/split-cmd)
+[![Coverage Status](https://coveralls.io/repos/github/thiagodp/split-cmd/badge.svg?branch=master)](https://coveralls.io/github/thiagodp/split-cmd?branch=master)
+
 ## Install
 
 ```bash
