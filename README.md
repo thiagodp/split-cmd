@@ -1,7 +1,9 @@
-# split-cmd
+[![npm (tag)](https://img.shields.io/npm/v/split-cmd?color=green&label=NPM&style=for-the-badge)](https://github.com/thiagodp/split-cmd/releases)
+[![Build Status](https://img.shields.io/github/workflow/status/thiagodp/split-cmd/test?style=for-the-badge)](https://github.com/thiagodp/split-cmd/actions)
+[![License](https://img.shields.io/npm/l/split-cmd.svg?style=for-the-badge&color=green)](https://github.com/thiagodp/split-cmd/blob/master/LICENSE.txt)
+[![npm](https://img.shields.io/npm/dt/split-cmd?style=for-the-badge&color=green)](https://www.npmjs.com/package/split-cmd)
 
-[![Build Status](https://travis-ci.org/thiagodp/split-cmd.svg?branch=master)](https://travis-ci.org/thiagodp/split-cmd)
-[![Downloads](https://img.shields.io/npm/dt/split-cmd.svg)](https://npmjs.org/package/split-cmd)
+# split-cmd
 
 > 💦 Split a command into an array or an object
 
@@ -11,13 +13,13 @@ Useful for splitting a command to use with NodeJS' [child process](https://nodej
 * Unit-tested.
 
 
-## Install
+## Installation
 
 ```bash
-npm install --save split-cmd
+npm i split-cmd
 ```
 
-## Examples
+## Usage
 
 ### Splitting into an array
 
