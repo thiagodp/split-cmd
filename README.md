@@ -1,5 +1,5 @@
 [![npm (tag)](https://img.shields.io/npm/v/split-cmd?color=green&label=NPM&style=for-the-badge)](https://github.com/thiagodp/split-cmd/releases)
-[![Build Status](https://img.shields.io/github/workflow/status/thiagodp/split-cmd/test?style=for-the-badge)](https://github.com/thiagodp/split-cmd/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/thiagodp/split-cmd/test.yml?style=for-the-badge)](https://github.com/thiagodp/split-cmd/actions)
 [![License](https://img.shields.io/npm/l/split-cmd.svg?style=for-the-badge&color=green)](https://github.com/thiagodp/split-cmd/blob/master/LICENSE.txt)
 [![npm](https://img.shields.io/npm/dt/split-cmd?style=for-the-badge&color=green)](https://www.npmjs.com/package/split-cmd)
 
