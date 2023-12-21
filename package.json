@@ -2,18 +2,31 @@
   "name": "split-cmd",
   "version": "1.0.1",
   "description": "💦Split a command into an array or an object",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "jest": "^25.5.4"
+  "license": "MIT",
+  "homepage": "https://github.com/thiagodp/split-cmd#readme",
+  "bugs": {
+    "url": "https://github.com/thiagodp/split-cmd/issues"
   },
+  "files": [
+    "index.*"
+  ],
+  "source": "index.ts",
+  "main": "index.js",
+  "browser": "index.umd.js",
+  "unpkg": "index.umd.js",
+  "module": "index.esm.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest",
-    "preversion": "jest"
+    "build": "microbundle --no-sourcemap",
+    "all": "pnpm run test && pnpm run build",
+    "preversion": "jest && pnpm run build",
+    "postversion": "echo \"Don't forget to push the tags and publish the version.\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thiagodp/split-cmd.git"
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "microbundle": "^0.15.1"
   },
   "keywords": [
     "split",
@@ -26,13 +39,12 @@
     "process",
     "child_process"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagodp/split-cmd.git"
+  },
   "author": {
     "name": "Thiago Delgado Pinto",
-    "email": "thiago-dp@bol.com.br"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/thiagodp/split-cmd/issues"
-  },
-  "homepage": "https://github.com/thiagodp/split-cmd#readme"
+    "email": "thiago_dp@yahoo.com.br"
+  }
 }

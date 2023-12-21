@@ -1,6 +1,4 @@
-// Run these tests with Jest
-
-var lib = require( '..' );
+const lib = require( '..' );
 
 describe( 'split-cmd', function () {
 

@@ -9,9 +9,9 @@
 
 Useful for splitting a command to use with NodeJS' [child process](https://nodejs.org/api/child_process.html) methods, like [spawn](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options), [exec](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback), and [execFile](https://nodejs.org/api/child_process.html#child_process_child_process_execfile_file_args_options_callback), as well with libs like [execa](https://github.com/sindresorhus/execa).
 
-* No external dependencies.
-* Unit-tested.
+⚡ Just 0.4 KB uncompressed, no external dependencies.
 
+🎯 Version `1.1`+ works with NodeJS, DenoJS and browsers. JavaScript and TypeScript.
 
 ## Installation
 
@@ -24,16 +24,20 @@ npm i split-cmd
 ### Splitting into an array
 
 ```js
-var split = require( 'split-cmd' ).split;
-var arr = split( 'git commit -m "some message with spaces"' );
+import { split } from 'split-cmd';
+
+const arr = split( 'git commit -m "some message with spaces"' );
+
 console.log( arr ); // [ "git", "commit", "-m", "some message with spaces" ]
 ```
 
 ### Splitting into an object
 
 ```js
-var splitToObject = require( 'split-cmd' ).splitToObject;
-var obj = splitToObject( 'git commit -m "some message with spaces"' );
+import { splitToObject } from 'split-cmd';
+
+const obj = splitToObject( 'git commit -m "some message with spaces"' );
+
 console.log( obj.command ); // git
 console.log( obj.args ); // [ "commit", "-m", "some message with spaces" ]
 ```
@@ -41,8 +45,8 @@ console.log( obj.args ); // [ "commit", "-m", "some message with spaces" ]
 ### Using it with execa
 
 ```js
-const { splitToObject } = require( 'split-cmd' );
-const execa = require( 'execa' );
+import { splitToObject } from 'split-cmd';
+import { execa } from 'execa';
 
 // Executing a single command
 const obj = splitToObject( 'echo "I see unicorns"' );
@@ -82,7 +86,7 @@ split( command: string ): string[]
  * @param {string} command Command to split.
  * @returns {object}
  */
-splitToObject( command: string ): object
+splitToObject( command: string ): { command?: string, args?: string[] }
 ```
 
 ## License
